@@ -16,6 +16,21 @@
         </sockets>
       </mainboard>
     </gadgeteerModelHasGadgeteerHardware>
+    <gadgeteerModelHasGadgeteerHardware Id="784b5cef-0d9d-472b-8ede-7d5cd37774ea">
+      <module Id="f0be4627-d6ec-461e-b30e-47e02e856841" cachedDefinition="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ModuleDefinition xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; Name=&quot;OledDisplay&quot; Type=&quot;Gadgeteer.Modules.Seeed.OledDisplay&quot; HardwareVersion=&quot;1.0&quot; Image=&quot;C:\Program Files (x86)\Seeed\Seeed .NET Gadgeteer SDK\Modules\OledDisplay\Resources\Image.jpg&quot; BoardWidth=&quot;37&quot; BoardHeight=&quot;43&quot; MinimumGadgeteerCoreVersion=&quot;2.42.500&quot; HelpUrl=&quot;&quot; UniqueId=&quot;a1b59e38-a62f-450a-8bff-7baa80bbb950&quot; Manufacturer=&quot;Seeed&quot; Description=&quot;A OledDisplay module&quot; InstanceName=&quot;oledDisplay&quot; ModuleSuppliesPower=&quot;false&quot;&gt;&#xD;&#xA;  &lt;ProvidedSockets /&gt;&#xD;&#xA;  &lt;Assemblies&gt;&#xD;&#xA;    &lt;Assembly MFVersion=&quot;4.1&quot; Name=&quot;GTM.Seeed.OledDisplay&quot; /&gt;&#xD;&#xA;    &lt;Assembly MFVersion=&quot;4.2&quot; Name=&quot;GTM.Seeed.OledDisplay&quot; /&gt;&#xD;&#xA;    &lt;Assembly MFVersion=&quot;4.2&quot; Name=&quot;Gadgeteer.Serial&quot; /&gt;&#xD;&#xA;  &lt;/Assemblies&gt;&#xD;&#xA;  &lt;LibrariesProvided /&gt;&#xD;&#xA;  &lt;Sockets&gt;&#xD;&#xA;    &lt;Socket Orientation=&quot;90&quot; Left=&quot;18.5&quot; Top=&quot;38.7&quot; TypesLabel=&quot;S&quot; ConstructorOrder=&quot;1&quot; Optional=&quot;false&quot;&gt;&#xD;&#xA;      &lt;Types&gt;&#xD;&#xA;        &lt;Type&gt;S&lt;/Type&gt;&#xD;&#xA;      &lt;/Types&gt;&#xD;&#xA;      &lt;Pins&gt;&#xD;&#xA;        &lt;Pin Shared=&quot;false&quot;&gt;3&lt;/Pin&gt;&#xD;&#xA;        &lt;Pin Shared=&quot;false&quot;&gt;4&lt;/Pin&gt;&#xD;&#xA;        &lt;Pin Shared=&quot;false&quot;&gt;6&lt;/Pin&gt;&#xD;&#xA;        &lt;Pin Shared=&quot;true&quot;&gt;7&lt;/Pin&gt;&#xD;&#xA;        &lt;Pin Shared=&quot;true&quot;&gt;9&lt;/Pin&gt;&#xD;&#xA;      &lt;/Pins&gt;&#xD;&#xA;    &lt;/Socket&gt;&#xD;&#xA;  &lt;/Sockets&gt;&#xD;&#xA;  &lt;ExtraLibrariesRequired /&gt;&#xD;&#xA;&lt;/ModuleDefinition&gt;" name="oledDisplay" moduleType="Gadgeteer.Modules.Seeed.OledDisplay" moduleDefinitionId="a1b59e38-a62f-450a-8bff-7baa80bbb950">
+        <socketUses>
+          <moduleHasSocketUses Id="3ce59ae0-f8f3-4d3d-b259-96c2d49b77b1">
+            <socketUse Id="45bdd024-8b26-4145-9a75-82ae21043c3d" label="S">
+              <socket>
+                <socketUseReferencesSocket Id="2364ad8c-b621-4c50-949f-7c1e00f2ebc3">
+                  <socketMoniker Id="e4c2e044-3c12-429c-93dc-dddeb915c6b8" />
+                </socketUseReferencesSocket>
+              </socket>
+            </socketUse>
+          </moduleHasSocketUses>
+        </socketUses>
+      </module>
+    </gadgeteerModelHasGadgeteerHardware>
   </gadgeteerHardware>
   <comments>
     <gadgeteerModelHasComments Id="230292d7-f67a-4fc7-a6e5-7c7f2081ff3e">

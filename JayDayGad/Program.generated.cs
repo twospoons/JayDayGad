@@ -16,6 +16,7 @@ namespace JayDayGad
     public partial class Program : Gadgeteer.Program
     {
         // GTM.Module definitions
+        Gadgeteer.Modules.Seeed.OledDisplay oledDisplay;
 
         public static void Main()
         {
@@ -30,7 +31,9 @@ namespace JayDayGad
 
         private void InitializeModules()
         {   
-            // Initialize GTM.Modules and event handlers here.
+            // Initialize GTM.Modules and event handlers here.		
+            oledDisplay = new GTM.Seeed.OledDisplay(1);
+
         }
     }
 }
