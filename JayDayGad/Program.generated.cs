@@ -17,6 +17,8 @@ namespace JayDayGad
     {
         // GTM.Module definitions
         Gadgeteer.Modules.Seeed.OledDisplay oledDisplay;
+        Gadgeteer.Modules.Seeed.CellularRadio cellularRadio;
+        Gadgeteer.Modules.GHIElectronics.Extender extender;
 
         public static void Main()
         {
@@ -33,6 +35,10 @@ namespace JayDayGad
         {   
             // Initialize GTM.Modules and event handlers here.		
             oledDisplay = new GTM.Seeed.OledDisplay(1);
+		
+            cellularRadio = new GTM.Seeed.CellularRadio(2);
+		
+            extender = new GTM.GHIElectronics.Extender(3);
 
         }
     }

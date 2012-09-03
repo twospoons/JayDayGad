@@ -11,6 +11,7 @@ using Gadgeteer.Networking;
 using GT = Gadgeteer;
 using GTM = Gadgeteer.Modules;
 using Gadgeteer.Modules.Seeed;
+using Gadgeteer.Modules.GHIElectronics;
 
 namespace JayDayGad
 {
