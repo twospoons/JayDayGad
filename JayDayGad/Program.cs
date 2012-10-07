@@ -17,7 +17,6 @@ namespace JayDayGad
 {
     public partial class Program
     {
-        public static byte[] vram = new byte[128 * 64 * 2];
         // This method is run when the mainboard is powered up or reset.   
         void ProgramStarted()
         {
@@ -33,9 +32,6 @@ namespace JayDayGad
                 timer.Tick +=<tab><tab>
                 timer.Start();
             *******************************************************************************************/
-            //Util.BitmapConvertBPP(Resources.GetBitmap(Resources.BitmapResources.test).GetBitmap(), vram, Util.BPP_Type.BPP16_BGR_BE);
-            vram[1] = 244;
-            vram[2] = 10;
             //oledDisplay.SimpleGraphics.BackgroundColor = GT.Color.White;
             var timer = new GT.Timer(1000);
             timer.Tick += new GT.Timer.TickEventHandler(timer_Tick);
@@ -46,8 +42,6 @@ namespace JayDayGad
 
         void timer_Tick(GT.Timer timer)
         {
-            oledDisplay.FlushRawBitmap(0, 0, 128, 64, vram);
-            //oledDisplay.SimpleGraphics.DisplayTextInRectangle("Now running!", 2, 2, 120, 20, GT.Color.Black, Resources.GetFont(Resources.FontResources.NinaB));
 
         }
     }

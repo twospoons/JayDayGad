@@ -397,7 +397,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="5.08" y1="66.04" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="AIN2" class="0">
 <segment>
 <pinref part="U$1" gate="X" pin="4"/>
 <wire x1="27.94" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
@@ -407,7 +407,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="45.72" y1="58.42" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="GPIO" class="0">
 <segment>
 <pinref part="U$1" gate="X" pin="6"/>
 <wire x1="27.94" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
@@ -417,7 +417,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="43.18" y1="53.34" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="AIN1" class="0">
 <segment>
 <pinref part="U$1" gate="X" pin="3"/>
 <wire x1="7.62" y1="63.5" x2="-2.54" y2="63.5" width="0.1524" layer="91"/>
@@ -427,7 +427,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="55.88" y1="81.28" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="AIN3" class="0">
 <segment>
 <pinref part="U$1" gate="X" pin="5"/>
 <wire x1="7.62" y1="60.96" x2="-2.54" y2="60.96" width="0.1524" layer="91"/>
