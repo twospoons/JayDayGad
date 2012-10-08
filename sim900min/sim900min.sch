@@ -102,90 +102,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="ozlollc">
-<packages>
-<package name="SHF105DSM">
-<wire x1="-2.54" y1="6.35" x2="-2.54" y2="-6.35" width="0.127" layer="51"/>
-<wire x1="-2.54" y1="6.35" x2="3.048" y2="6.35" width="0.127" layer="51"/>
-<wire x1="3.048" y1="6.35" x2="3.048" y2="5.4102" width="0.127" layer="51"/>
-<wire x1="3.048" y1="5.4102" x2="2.54" y2="5.4102" width="0.127" layer="51"/>
-<wire x1="2.54" y1="5.4102" x2="2.54" y2="0.635" width="0.127" layer="51"/>
-<wire x1="2.54" y1="0.635" x2="3.048" y2="0.635" width="0.127" layer="51"/>
-<wire x1="3.048" y1="0.635" x2="3.048" y2="-0.635" width="0.127" layer="51"/>
-<wire x1="3.048" y1="-0.635" x2="2.54" y2="-0.635" width="0.127" layer="51"/>
-<wire x1="2.54" y1="-0.635" x2="2.54" y2="-5.4102" width="0.127" layer="51"/>
-<wire x1="2.54" y1="-5.4102" x2="3.048" y2="-5.4102" width="0.127" layer="51"/>
-<wire x1="3.048" y1="-5.4102" x2="3.048" y2="-6.35" width="0.127" layer="51"/>
-<wire x1="3.048" y1="-6.35" x2="-2.54" y2="-6.35" width="0.127" layer="51"/>
-<wire x1="-2.54" y1="3.175" x2="-2.54" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="6.35" x2="3.048" y2="6.35" width="0.127" layer="21"/>
-<wire x1="3.048" y1="6.35" x2="3.048" y2="5.4102" width="0.127" layer="21"/>
-<wire x1="3.048" y1="5.4102" x2="2.54" y2="5.4102" width="0.127" layer="21"/>
-<wire x1="2.54" y1="5.4102" x2="2.54" y2="3.175" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="3.048" y2="0.635" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="3.048" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-3.175" x2="2.54" y2="-5.4102" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-5.4102" x2="3.048" y2="-5.4102" width="0.127" layer="21"/>
-<wire x1="3.048" y1="-5.4102" x2="3.048" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="3.048" y1="-6.35" x2="-2.54" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-6.35" x2="-2.54" y2="-3.175" width="0.127" layer="21"/>
-<smd name="5" x="-2.54" y="0" dx="3.81" dy="0.7366" layer="1"/>
-<smd name="3" x="-2.54" y="1.27" dx="3.81" dy="0.7366" layer="1"/>
-<smd name="1" x="-2.54" y="2.54" dx="3.81" dy="0.7366" layer="1"/>
-<smd name="7" x="-2.54" y="-1.27" dx="3.81" dy="0.7366" layer="1"/>
-<smd name="9" x="-2.54" y="-2.54" dx="3.81" dy="0.7366" layer="1"/>
-<smd name="6" x="2.54" y="0" dx="3.81" dy="0.7366" layer="1"/>
-<smd name="4" x="2.54" y="1.27" dx="3.81" dy="0.7366" layer="1"/>
-<smd name="2" x="2.54" y="2.54" dx="3.81" dy="0.7366" layer="1"/>
-<smd name="8" x="2.54" y="-1.27" dx="3.81" dy="0.7366" layer="1"/>
-<smd name="10" x="2.54" y="-2.54" dx="3.81" dy="0.7366" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SHF105">
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="1" x="-10.16" y="5.08" length="middle" direction="pas"/>
-<pin name="2" x="10.16" y="5.08" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="3" x="-10.16" y="2.54" length="middle" direction="pas"/>
-<pin name="4" x="10.16" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="5" x="-10.16" y="0" length="middle" direction="pas"/>
-<pin name="6" x="10.16" y="0" length="middle" direction="pas" rot="R180"/>
-<pin name="7" x="-10.16" y="-2.54" length="middle" direction="pas"/>
-<pin name="8" x="10.16" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="9" x="-10.16" y="-5.08" length="middle" direction="pas"/>
-<pin name="10" x="10.16" y="-5.08" length="middle" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SHF105">
-<gates>
-<gate name="X" symbol="SHF105" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SM" package="SHF105DSM">
-<connects>
-<connect gate="X" pin="1" pad="1"/>
-<connect gate="X" pin="10" pad="10"/>
-<connect gate="X" pin="2" pad="2"/>
-<connect gate="X" pin="3" pad="3"/>
-<connect gate="X" pin="4" pad="4"/>
-<connect gate="X" pin="5" pad="5"/>
-<connect gate="X" pin="6" pad="6"/>
-<connect gate="X" pin="7" pad="7"/>
-<connect gate="X" pin="8" pad="8"/>
-<connect gate="X" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
@@ -791,6 +707,82 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="ozlollc">
+<packages>
+<package name="SHF105DSM">
+<wire x1="-2.794" y1="6.35" x2="3.048" y2="6.35" width="0.127" layer="51"/>
+<wire x1="3.048" y1="6.35" x2="3.048" y2="5.4102" width="0.127" layer="51"/>
+<wire x1="3.048" y1="5.4102" x2="3.048" y2="0.635" width="0.127" layer="51"/>
+<wire x1="3.048" y1="0.635" x2="3.048" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="3.048" y1="-0.635" x2="3.048" y2="-5.4102" width="0.127" layer="51"/>
+<wire x1="3.048" y1="-5.4102" x2="3.048" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="3.048" y1="-6.35" x2="-2.794" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="6.35" x2="3.048" y2="6.35" width="0.127" layer="21"/>
+<wire x1="3.048" y1="6.35" x2="3.048" y2="5.4102" width="0.127" layer="21"/>
+<wire x1="3.048" y1="-5.4102" x2="3.048" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="3.048" y1="-6.35" x2="-2.54" y2="-6.35" width="0.127" layer="21"/>
+<smd name="5" x="-2.54" y="0" dx="3.81" dy="0.7366" layer="1"/>
+<smd name="3" x="-2.54" y="1.27" dx="3.81" dy="0.7366" layer="1"/>
+<smd name="1" x="-2.54" y="2.54" dx="3.81" dy="0.7366" layer="1"/>
+<smd name="7" x="-2.54" y="-1.27" dx="3.81" dy="0.7366" layer="1"/>
+<smd name="9" x="-2.54" y="-2.54" dx="3.81" dy="0.7366" layer="1"/>
+<smd name="6" x="2.54" y="0" dx="3.81" dy="0.7366" layer="1"/>
+<smd name="4" x="2.54" y="1.27" dx="3.81" dy="0.7366" layer="1"/>
+<smd name="2" x="2.54" y="2.54" dx="3.81" dy="0.7366" layer="1"/>
+<smd name="8" x="2.54" y="-1.27" dx="3.81" dy="0.7366" layer="1"/>
+<smd name="10" x="2.54" y="-2.54" dx="3.81" dy="0.7366" layer="1"/>
+<wire x1="-2.794" y1="1.27" x2="-1.778" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.27" x2="-1.778" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.27" x2="-2.794" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.794" y1="6.35" x2="-2.794" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.794" y1="-1.27" x2="-2.794" y2="-6.35" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SHF105">
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="1" x="-10.16" y="5.08" length="middle" direction="pas"/>
+<pin name="2" x="10.16" y="5.08" visible="pin" length="middle" direction="pas" rot="R180"/>
+<pin name="3" x="-10.16" y="2.54" length="middle" direction="pas"/>
+<pin name="4" x="10.16" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="5" x="-10.16" y="0" length="middle" direction="pas"/>
+<pin name="6" x="10.16" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="7" x="-10.16" y="-2.54" length="middle" direction="pas"/>
+<pin name="8" x="10.16" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="9" x="-10.16" y="-5.08" length="middle" direction="pas"/>
+<pin name="10" x="10.16" y="-5.08" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SHF105">
+<gates>
+<gate name="X" symbol="SHF105" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SM" package="SHF105DSM">
+<connects>
+<connect gate="X" pin="1" pad="1"/>
+<connect gate="X" pin="10" pad="10"/>
+<connect gate="X" pin="2" pad="2"/>
+<connect gate="X" pin="3" pad="3"/>
+<connect gate="X" pin="4" pad="4"/>
+<connect gate="X" pin="5" pad="5"/>
+<connect gate="X" pin="6" pad="6"/>
+<connect gate="X" pin="7" pad="7"/>
+<connect gate="X" pin="8" pad="8"/>
+<connect gate="X" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -801,44 +793,44 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </class>
 </classes>
 <parts>
-<part name="U$1" library="ozlollc" deviceset="SHF105" device="SM"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M08" device="1X08"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="U$1" library="ozlollc" deviceset="SHF105" device="SM"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="X" x="50.8" y="50.8"/>
 <instance part="JP1" gate="G$1" x="91.44" y="50.8" rot="R180"/>
 <instance part="P+1" gate="1" x="66.04" y="68.58"/>
 <instance part="P+2" gate="1" x="81.28" y="30.48" rot="R180"/>
 <instance part="GND1" gate="1" x="66.04" y="30.48"/>
 <instance part="GND2" gate="1" x="76.2" y="30.48"/>
 <instance part="+3V1" gate="G$1" x="35.56" y="68.58"/>
+<instance part="U$1" gate="X" x="50.8" y="50.8"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="U$1" gate="X" pin="1"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="40.64" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="55.88" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="X" pin="1"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U$1" gate="X" pin="2"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="60.96" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="55.88" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="X" pin="2"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="8"/>
@@ -849,16 +841,62 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="X" pin="10"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="60.96" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="45.72" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="X" pin="10"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="7"/>
 <wire x1="86.36" y1="43.18" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="43.18" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<wire x1="60.96" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="53.34" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="4"/>
+<wire x1="73.66" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="X" pin="4"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<wire x1="40.64" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="50.8" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="76.2" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="71.12" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="55.88" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="55.88" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="3"/>
+<wire x1="81.28" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="X" pin="5"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<wire x1="60.96" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="50.8" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="48.26" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="48.26" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="X" pin="6"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<wire x1="40.64" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="53.34" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="73.66" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="71.12" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="X" pin="3"/>
 </segment>
 </net>
 </nets>
