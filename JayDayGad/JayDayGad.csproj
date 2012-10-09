@@ -59,28 +59,18 @@
     <Reference Include="Gadgeteer">
       <SpecificVersion>false</SpecificVersion>
     </Reference>
-    <Reference Include="Gadgeteer.Serial, Version=2.42.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="GHIElectronics.Gadgeteer.FEZCerbuinoBee, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="GTM.GHIElectronics.Display_HD44780, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="GTM.GHIElectronics.Extender, Version=4.1.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="GTM.Seeed.CellularRadio, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
+    <Reference Include="GTM.GHIElectronics.Display_HD44780, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GTM.GHIElectronics.Extender, Version=4.1.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GTM.Seeed.CellularRadio, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SPOT.Graphics" />
     <Reference Include="Microsoft.SPOT.Hardware" />
     <Reference Include="Microsoft.SPOT.Hardware.SerialPort" />
     <Reference Include="Microsoft.SPOT.IO" />
     <Reference Include="Microsoft.SPOT.Native" />
     <Reference Include="Microsoft.SPOT.Net" />
-    <Reference Include="Microsoft.SPOT.Net.Security" />
     <Reference Include="Microsoft.SPOT.TinyCore" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
@@ -94,6 +84,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="JayDayService\bin\Debug\le\JayDayService.pe" />
     <None Include="Program.gadgeteer">
       <Generator>GadgeteerFileCodeGenerator</Generator>
       <LastGenOutput>Program.generated.cs</LastGenOutput>
@@ -101,13 +92,11 @@
     <None Include="Program.gadgeteer.diagram">
       <DependentUpon>Program.gadgeteer</DependentUpon>
     </None>
-    <None Include="Resources\NinaB.tinyfnt" />
-    <None Include="Resources\small.tinyfnt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\test.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>

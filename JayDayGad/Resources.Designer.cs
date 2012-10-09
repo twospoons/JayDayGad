@@ -25,24 +25,14 @@ namespace JayDayGad
                 return Resources.manager;
             }
         }
-        internal static Microsoft.SPOT.Bitmap GetBitmap(Resources.BitmapResources id)
+        internal static byte[] GetBytes(Resources.BinaryResources id)
         {
-            return ((Microsoft.SPOT.Bitmap)(Microsoft.SPOT.ResourceUtility.GetObject(ResourceManager, id)));
-        }
-        internal static Microsoft.SPOT.Font GetFont(Resources.FontResources id)
-        {
-            return ((Microsoft.SPOT.Font)(Microsoft.SPOT.ResourceUtility.GetObject(ResourceManager, id)));
+            return ((byte[])(Microsoft.SPOT.ResourceUtility.GetObject(ResourceManager, id)));
         }
         [System.SerializableAttribute()]
-        internal enum BitmapResources : short
+        internal enum BinaryResources : short
         {
-            test = -5866,
-        }
-        [System.SerializableAttribute()]
-        internal enum FontResources : short
-        {
-            small = 13070,
-            NinaB = 18060,
+            JayDayService = 13928,
         }
     }
 }

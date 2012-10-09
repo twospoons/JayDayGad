@@ -16,9 +16,6 @@ namespace JayDayGad
     public partial class Program : Gadgeteer.Program
     {
         // GTM.Module definitions
-        Gadgeteer.Modules.Seeed.CellularRadio cellularRadio;
-        Gadgeteer.Modules.GHIElectronics.Extender extender;
-        Gadgeteer.Modules.GHIElectronics.Display_HD44780 display_HD44780;
 
         public static void Main()
         {
@@ -33,13 +30,7 @@ namespace JayDayGad
 
         private void InitializeModules()
         {   
-            // Initialize GTM.Modules and event handlers here.		
-            display_HD44780 = new GTM.GHIElectronics.Display_HD44780(1);
-		
-            cellularRadio = new GTM.Seeed.CellularRadio(2);
-		
-            extender = new GTM.GHIElectronics.Extender(3);
-
+            // Initialize GTM.Modules and event handlers here.
         }
     }
 }
