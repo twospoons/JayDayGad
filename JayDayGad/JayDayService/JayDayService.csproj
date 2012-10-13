@@ -30,15 +30,15 @@
   </PropertyGroup>
   <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
   <ItemGroup>
+    <Compile Include="Sim900Modem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Gadgeteer, Version=2.42.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Gadgeteer.Serial, Version=2.42.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="GTM.GHIElectronics.Display_HD44780, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="GTM.GHIElectronics.Extender, Version=4.1.5.0, Culture=neutral, processorArchitecture=MSIL" />
-    <Reference Include="GTM.Seeed.CellularRadio, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.SPOT.Native">
-    </Reference>
+    <Reference Include="Microsoft.SPOT.Native" />
   </ItemGroup>
 </Project>
