@@ -22,29 +22,20 @@ namespace JayDayService
         GTI.DigitalOutput resetPin;
         GTI.DigitalOutput powerPin;
         GT.Socket socket; 
-        GTI.Serial serial;
+        System.IO.Ports.SerialPort serial;
         byte[] bufferd;
         Gadgeteer.Modules.GHIElectronics.Display_HD44780 display;
         private static bool signalOk;
 
         public Sim900Modem(int port, GTM.Display_HD44780 display)
         {
-            
             this.display = display;
-            modem = new GTM.Extender(port);           
-            //powerPin = modem.SetupDigitalOutput(GT.Socket.Pin.Nine, false);
             socket = GT.Socket.GetSocket(port, true, null, null);
-            //socket.ReservePin(GT.Socket.Pin.Four, modem);
-            serial = new GTI.Serial(socket, 9600, GTI.Serial.SerialParity.None, GTI.Serial.SerialStopBits.One, 8, GTI.Serial.HardwareFlowControl.NotRequired, null);
+            powerPin = new GTI.DigitalOutput(socket, GT.Socket.Pin.Three, false, null);
+            serial = new System.IO.Ports.SerialPort("COM2", 115200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
             serial.ReadTimeout = 1000;
             serial.Open();
-            //resetPin = new GTI.DigitalOutput(socket, GT.Socket.Pin.Eight, false, null);
-            powerPin = new GTI.DigitalOutput(socket, GT.Socket.Pin.Nine, false, null);
             bufferd = new byte[32];
-            //resetPin.Write(false);
-            //powerPin.Write(true);
-            //Thread.Sleep(1500);
-            //powerPin.Write(false);
         }
 
         public void SendHttpData(string domainName, string url)
@@ -68,6 +59,7 @@ namespace JayDayService
             Thread.Sleep(100);
             // att gophone
             //SendData("AT+CSTT=\"wap.cingular\", \"WAP@CINGULARGPRS.COM\", \"CINGULAR1\"\r\n", "OK\r\n"); // OK
+            SendData("AT+CSTT=\"a105.2way.net\", \"WAP@CINGULARGPRS.COM\", \"CINGULAR1\"\r\n", "OK\r\n");
             Thread.Sleep(100);
             SendData("AT+CIICR\r\n", "OK\r\n"); // OK
             Thread.Sleep(100);
@@ -216,6 +208,47 @@ namespace JayDayService
             return "";
         }
 
+        //public void PowerDown2()
+        //{
+        //    int checkResponse = 0;
+        //    int tryTurnOffCounter = 0;
+        //    bool modemOff = false;
+        //    ModemResponse response;
+        //    Utilities.WriteDebug("Power down modem", display); 
+        //    while (tryTurnOffCounter < 5 && !modemOff)
+        //    {
+        //        powerPin.Write(true);
+        //        Thread.Sleep(2000);
+        //        powerPin.Write(false);
+        //        checkResponse = 0;
+        //        Thread.Sleep(500);
+        //        while (checkResponse < 5 && !modemOff)
+        //        {
+        //            response = SendData("", "NORMAL POWER DOWN\r\n");
+        //            if(!response.GotExpectedResponse)
+        //            {
+        //                checkResponse++;
+        //                Thread.Sleep(0);
+        //            }
+        //            else
+        //            {
+        //                modemOff = true;
+        //            }
+        //            checkResponse++;
+        //        }
+
+        //        if (!modemOff)
+        //        {
+        //            Utilities.WriteDebug("Modem not off", display);
+        //        }
+        //        else
+        //        {
+        //            Utilities.WriteDebug("Modem off", display);
+        //        }
+        //        tryTurnOffCounter++;
+        //    }
+        //}
+
         public void PowerDown()
         {
             
@@ -226,23 +259,19 @@ namespace JayDayService
             while (iterations < 5)
             {
                 Utilities.WriteDebug("Power down modem", display);
-                Thread.Sleep(500);
                 powerPin.Write(true);
                 Thread.Sleep(1500);
                 powerPin.Write(false);
+                Thread.Sleep(500);
                 Utilities.WriteDebug("Waiting for gsm", display);
-                Thread.Sleep(5000);
-                var response = SendData("", "NORMAL POWER DOWN\r\n", false);                
-                //var response = SendData("AT\r\n", "", false);
+                var response = SendData("AT", "NORMAL POWER DOWN\r\n", false);                
                 if (response.GotExpectedResponse)
                 {
                     Utilities.WriteDebug("Modem off", display);
-                    Thread.Sleep(1000);
                     break;
                 }
                 Utilities.WriteDebug("Modem not off", display);
                 iterations++;
-                Thread.Sleep(5000);
             }
         }
 
@@ -262,9 +291,10 @@ namespace JayDayService
                 powerPin.Write(true);
                 Thread.Sleep(2000);
                 powerPin.Write(false);
+                Thread.Sleep(500);
                 Utilities.WriteDebug("Waiting for gsm", display);
                 // call ready only works when there is a sim in it, just testing for now
-                var response = SendData("", "Call Ready\r\n", false);
+                var response = SendData("AT", "IIII", false);
                 //var response = SendData("AT+GSN\r\n", "OK\r\n");
                 if (response.GotExpectedResponse)
                 {

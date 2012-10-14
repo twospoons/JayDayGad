@@ -37,7 +37,11 @@ namespace JayDayService
             }
 
             data = data.Substring(0, data.Length - 1) + "]";
-            modem.UpdateSignalStrength();
+            for (var x = 0; x < 3; x++)
+            {
+                modem.UpdateSignalStrength();
+                Thread.Sleep(1000);
+            }
             Thread.Sleep(2000);
             var imei = modem.GetImei();
             Utilities.WriteDebug(imei.ResponseText, display);
@@ -159,8 +163,8 @@ namespace JayDayService
 
         static void firstTimeTimer_Tick(GT.Timer timer)
         {
-            modem.PowerDown();
             firstTimeTimer.Stop();
+            modem.PowerDown();
             sensorTimer.Start();
         }
 
