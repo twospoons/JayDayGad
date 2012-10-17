@@ -208,47 +208,6 @@ namespace JayDayService
             return "";
         }
 
-        //public void PowerDown2()
-        //{
-        //    int checkResponse = 0;
-        //    int tryTurnOffCounter = 0;
-        //    bool modemOff = false;
-        //    ModemResponse response;
-        //    Utilities.WriteDebug("Power down modem", display); 
-        //    while (tryTurnOffCounter < 5 && !modemOff)
-        //    {
-        //        powerPin.Write(true);
-        //        Thread.Sleep(2000);
-        //        powerPin.Write(false);
-        //        checkResponse = 0;
-        //        Thread.Sleep(500);
-        //        while (checkResponse < 5 && !modemOff)
-        //        {
-        //            response = SendData("", "NORMAL POWER DOWN\r\n");
-        //            if(!response.GotExpectedResponse)
-        //            {
-        //                checkResponse++;
-        //                Thread.Sleep(0);
-        //            }
-        //            else
-        //            {
-        //                modemOff = true;
-        //            }
-        //            checkResponse++;
-        //        }
-
-        //        if (!modemOff)
-        //        {
-        //            Utilities.WriteDebug("Modem not off", display);
-        //        }
-        //        else
-        //        {
-        //            Utilities.WriteDebug("Modem off", display);
-        //        }
-        //        tryTurnOffCounter++;
-        //    }
-        //}
-
         public void PowerDown()
         {
             
@@ -277,11 +236,6 @@ namespace JayDayService
 
         public void PowerUp()
         {
-            //powerPin.Write(true);
-            //Thread.Sleep(2000);
-            //powerPin.Write(false);
-            //return;
-
             serial.DiscardOutBuffer();
             serial.DiscardInBuffer();
             var iterations = 0;
