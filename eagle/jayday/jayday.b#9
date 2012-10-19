@@ -682,6 +682,8 @@ design rules under a new name.</description>
 <element name="R3" library="rcl" package="R0603" value="100K" x="0.7112" y="-9.2456"/>
 <element name="PWR1" library="led" package="CHIPLED_0805" value="" x="2.1336" y="-17.0688"/>
 <element name="R8" library="rcl" package="R0603" value="330" x="0.7112" y="-22.0472"/>
+<element name="PWR2" library="led" package="CHIPLED_0805" value="" x="2.1336" y="-29.8704"/>
+<element name="R10" library="rcl" package="R0603" value="330" x="0.7112" y="-34.8488"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -709,6 +711,8 @@ design rules under a new name.</description>
 <contactref element="R2" pad="2"/>
 <contactref element="PWR1" pad="C"/>
 <contactref element="R8" pad="2"/>
+<contactref element="PWR2" pad="C"/>
+<contactref element="R10" pad="2"/>
 <wire x1="67.611875" y1="24.775921875" x2="100.100134375" y2="28.60026875" width="0" layer="19" extent="1-1"/>
 <wire x1="60.78445625" y1="20.909534375" x2="67.611875" y2="24.775921875" width="0" layer="19" extent="1-1"/>
 <wire x1="66.030065625" y1="15.931134375" x2="60.78445625" y2="20.909534375" width="0" layer="19" extent="1-1"/>
@@ -727,6 +731,8 @@ design rules under a new name.</description>
 <wire x1="1.5612" y1="-9.2456" x2="1.5612" y2="-3.556" width="0" layer="19" extent="1-1"/>
 <wire x1="2.1336" y1="-16.0188" x2="1.5612" y2="-9.2456" width="0" layer="19" extent="1-1"/>
 <wire x1="1.5612" y1="-22.0472" x2="2.1336" y2="-16.0188" width="0" layer="19" extent="1-1"/>
+<wire x1="2.1336" y1="-28.8204" x2="1.5612" y2="-22.0472" width="0" layer="19" extent="1-1"/>
+<wire x1="1.5612" y1="-34.8488" x2="2.1336" y2="-28.8204" width="0" layer="19" extent="1-1"/>
 <wire x1="7.5" y1="12.4" x2="7.112" y2="2.556" width="0" layer="19" extent="1-1"/>
 <wire x1="10.8068" y1="22.7584" x2="7.5" y2="12.4" width="0" layer="19" extent="1-1"/>
 <wire x1="20" y1="30.5" x2="29.298" y2="23.4696" width="0" layer="19" extent="1-1"/>
@@ -885,6 +891,11 @@ design rules under a new name.</description>
 <contactref element="R8" pad="1"/>
 <contactref element="PWR1" pad="A"/>
 <wire x1="2.1336" y1="-18.1188" x2="-0.1388" y2="-22.0472" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="R10" pad="1"/>
+<contactref element="PWR2" pad="A"/>
+<wire x1="2.1336" y1="-30.9204" x2="-0.1388" y2="-34.8488" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

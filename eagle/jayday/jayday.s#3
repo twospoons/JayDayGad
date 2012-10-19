@@ -14940,6 +14940,7 @@ Source: www.kingbright.com</description>
 <junction x="-68.58" y="76.2"/>
 <junction x="-50.8" y="76.2"/>
 <junction x="-33.02" y="76.2"/>
+<junction x="-50.8" y="73.66"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>

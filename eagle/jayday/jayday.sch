@@ -14813,6 +14813,7 @@ Source: www.kingbright.com</description>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="PWR2" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="R0603" value="1K"/>
+<part name="DISPLAY-IN1" library="GHI" deviceset="2X5_1.27MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14873,7 +14874,7 @@ Source: www.kingbright.com</description>
 <instance part="V11" gate="G$1" x="-10.16" y="33.02"/>
 <instance part="FETS-X-Y" gate="G$1" x="-48.26" y="119.38"/>
 <instance part="SENSORS-IN" gate="G$1" x="5.08" y="81.28"/>
-<instance part="DISPLAY-IN" gate="G$1" x="7.62" y="119.38"/>
+<instance part="DISPLAY-IN" gate="G$1" x="5.08" y="119.38"/>
 <instance part="DISPLAY-OUT" gate="G$1" x="53.34" y="116.84"/>
 <instance part="GND6" gate="1" x="68.58" y="66.04"/>
 <instance part="GND13" gate="1" x="-33.02" y="106.68"/>
@@ -14908,6 +14909,7 @@ Source: www.kingbright.com</description>
 <instance part="GND22" gate="1" x="38.1" y="30.48"/>
 <instance part="PWR2" gate="G$1" x="38.1" y="38.1"/>
 <instance part="R10" gate="G$1" x="38.1" y="50.8" rot="R90"/>
+<instance part="DISPLAY-IN1" gate="G$1" x="25.4" y="134.62"/>
 </instances>
 <busses>
 </busses>

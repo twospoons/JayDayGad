@@ -15355,6 +15355,7 @@ Source: www.kingbright.com</description>
 <wire x1="22.86" y1="58.42" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-20.32" y1="121.92" x2="-20.32" y2="124.46" width="0.1524" layer="91"/>
+<junction x="-20.32" y="121.92"/>
 </segment>
 </net>
 <net name="N$13" class="0">

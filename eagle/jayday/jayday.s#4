@@ -14952,6 +14952,7 @@ Source: www.kingbright.com</description>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="20.32" x2="-50.8" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-10.16" y="20.32"/>
+<junction x="-50.8" y="20.32"/>
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="C"/>
